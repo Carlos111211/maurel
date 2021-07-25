@@ -1,0 +1,34 @@
+<?php
+
+if(isset($_POST['submit']))
+{
+$username= htmlentities(trim($_POST['username']));
+$password= htmlentities(trim($_POST['password']));
+$repeatpassword= htmlentities(trim($_POST['repeatpassword']));
+if($username&&$password&&$repeatpassword)
+{
+
+}else echo"veuillez saisir tous les champs";
+
+
+
+}
+
+?>
+
+
+
+
+
+<form method="POST" action="register.php">
+<p>votre pseudo:</p>
+<input type="text" name="username">
+<p>Votre password:</p>
+<input type="password" name="password">
+<p>Repetez votre password</p>
+<input type="password" name="repeatpassword"><br/><br/>
+<input type="submit"value="S'inscrire" name="submit">
+
+
+</form>
+
